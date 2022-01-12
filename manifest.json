@@ -1,0 +1,12 @@
+{
+	"name": "Color Stage",
+	"description": "This extension was made to help developers remember which AWS console environment they're currently logged on",
+	"version": "1.0",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+		  "matches": [ "*://*.console.aws.amazon.com/*" ],
+		  "js": [ "changeColour.js" ]
+		}
+	]
+}
